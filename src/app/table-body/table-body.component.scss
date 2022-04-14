@@ -1,0 +1,95 @@
+.table-body-component {
+  width: 1519px;
+  margin-bottom: 30px;
+  table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 3px;
+    font-size: 15px;
+    position: relative;
+    overflow: auto;
+
+    &__checked-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      span {
+        background-color: #91a4c7;
+        width: 100%;
+        text-align: center;
+        color: white;
+        border-radius: 4px;
+      }
+    }
+    &__head {
+      background-color: #f1f1f1;
+
+      padding: 10px;
+    }
+    &__row {
+      border-radius: 5px;
+      background-color: white;
+      border: 2px solid #ebecee;
+      border-radius: 2px;
+      margin: 3px 0;
+      &:hover {
+        background-color: #dde2e7;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.img {
+  &__user {
+    width: 25px;
+  }
+  &__state {
+    width: 50px;
+  }
+}
+
+.check {
+  margin-left: 10px;
+}
+.background {
+  background-color: #e5e5e5 !important;
+}
+.user-name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 600;
+  &__img {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+  }
+}
+.tollbar {
+  position: absolute;
+  right: -60px;
+  top: 75px;
+}
+th {
+  color: #b7b7b7;
+  vertical-align: bottom;
+}
+td {
+  color: #919191;
+  height: 37px;
+  vertical-align: bottom;
+}
+.button-icon {
+  background: none;
+  border: none;
+  font-size: 19px;
+  color: rgb(187, 187, 187);
+  margin-left: 10px;
+}

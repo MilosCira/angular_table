@@ -1,0 +1,33 @@
+.tollbar-component {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 5;
+    border: 1px solid rgb(226, 224, 224);
+    border-radius: 5px;
+    justify-content: flex-end;
+}
+.tollbar-option {
+    margin-right: 5px;
+    padding: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(187, 187, 187);
+    i {
+        color: rgb(187, 187, 187);
+    }
+    .text {
+        margin-left: 5px;
+        &:hover {
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+.trash {
+    color: red !important;
+    font-weight: 500;
+    i {
+        color: red;
+    }
+}

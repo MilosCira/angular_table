@@ -1,0 +1,67 @@
+<div class="table-body-component">
+  <table class="table">
+    <thead class="table__head">
+      <tr>
+        <th class="table__checked-number">
+          <span>{{ checked }}</span>
+        </th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>SSN</th>
+        <th>DOB</th>
+        <th>Hired</th>
+        <th>CDL#</th>
+        <th>State</th>
+        <th>CDL exp.</th>
+        <th>Medical exp.</th>
+        <th>Mvr exp.</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table__row" *ngFor="let user of data" [ngClass]="{ background: user.checked === true }">
+        <td>
+          <input type="checkbox" class="check" [checked]="user.checked"
+            (change)="checkUserChanged(user.checked, user.id)" />
+        </td>
+        <td>
+          <div class="user-name">
+            <div class="user_name__img">
+              <img class="img__user" [src]="user.userImage" alt="">
+            </div>
+            {{ user.fullname }}
+          </div>
+        </td>
+        <td>
+          {{ user.phone }}
+        </td>
+        <td>
+          {{ user.ssn }}
+        </td>
+        <td>
+          {{ user.dob }}
+        </td>
+        <td>
+          {{ user.hired }}
+        </td>
+        <td>
+          {{ user.cdl }}
+        </td>
+        <td>
+          <img [src]="user.stateImage" alt="" class="img_state">
+        </td>
+
+        <td>in {{ user.cdlExp }} days</td>
+        <td>in {{ user.medicalExp }} days</td>
+        <td>in {{ user.mvrExp }} days</td>
+        <td>
+          <button class="button-icon"><i class="fa fa-paperclip"></i></button>
+          <button class="button-icon"><i class="fa fa-file"></i></button>
+          <button class="button-icon" (click)="openEdit()"><i class="fa fa-ellipsis-h"></i></button>
+
+        </td>
+      </tr>
+      <app-tollbar *ngIf="editBoolean" class="tollbar"></app-tollbar>
+    </tbody>
+  </table>
+</div>

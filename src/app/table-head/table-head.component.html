@@ -1,0 +1,23 @@
+<div class="table-head-input">
+    <button *ngIf="openSearchBar==false"
+            (click)="toggleSearchBar()"
+             class="button-icon">
+        <i class="fa fa-search"></i>
+    </button>
+    <div class="icon__search">
+        <i (click)="toggleSearchBar()"
+            *ngIf="openSearchBar==true"
+             class="fa fa-search"> </i>
+
+        <input *ngIf="openSearchBar==true" 
+               (input)="searchOption($event)"
+                placeholder="Find" class="__input"
+                 type="text">
+    </div>
+
+
+
+    <div class="div_empty"></div>
+
+    <button class="button-icon"><i class="fa fa-plus plus"></i></button>
+</div>
