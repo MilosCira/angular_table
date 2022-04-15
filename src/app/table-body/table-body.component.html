@@ -1,10 +1,10 @@
-<div class="table-body-component">
+<div class="table-component">
   <table class="table">
     <thead class="table__head">
       <tr>
-        <th class="table__checked-number">
+        <td class="table__checked-number">
           <span>{{ checked }}</span>
-        </th>
+        </td>
         <th>Name</th>
         <th>Phone</th>
         <th>SSN</th>
@@ -26,7 +26,7 @@
         </td>
         <td>
           <div class="user-name">
-            <div class="user_name__img">
+            <div class="__img">
               <img class="img__user" [src]="user.userImage" alt="">
             </div>
             {{ user.fullname }}

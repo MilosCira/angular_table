@@ -8,7 +8,7 @@ import { DataService } from '../services/data.service';
 })
 export class TableHeadComponent implements OnInit {
   constructor(private dataService: DataService) {}
-  @Output() inputChanged: EventEmitter<any> = new EventEmitter();
+  @Output('inputChanged') inputChanged = new EventEmitter<any>();
 
   openSearchBar:boolean=false;
   showModal:boolean=false;
@@ -19,7 +19,7 @@ export class TableHeadComponent implements OnInit {
   searchOption(search:any) {
     
     this.dataService.searchData(search.target.value);   
-     
+    
     return this.inputChanged.emit();
   }
   

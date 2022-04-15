@@ -1,12 +1,4 @@
-// .table-head-thead {
-//   width: 100%;
-//   table{
-//     width: 100%;
-//   }
- 
-// }
-
-.table-head-input {
+.table-head {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
@@ -16,7 +8,7 @@
   margin-top: 100px;
   padding-top: 5px;
 
-  .div_empty{
+  .div_empty {
     width: 92%;
     height: 33px;
     outline: none;
@@ -24,31 +16,32 @@
     background-color: #fff;
     margin-right: 10px;
   }
-  button{
+  button {
     width: 3%;
     border-radius: 3px;
     background-color: white;
     border: 1px solid #dee2e6;
   }
 }
-.icon__search{
+.icon__search {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  i{
+  i {
     position: absolute;
-    color: #B7B7B7;
+    color: #b7b7b7;
     left: 10px;
     font-size: 20px;
     bottom: 11px;
     top: 4px;
-    &:hover{
+    &:hover {
       color: #eeeeee;
     }
+   
   }
-  input{
+  input {
     width: 201px;
     height: 33px;
     outline: none;
@@ -59,8 +52,8 @@
     color: #ffffff;
     background-color: #6c6c6c;
     border-radius: 3px;
-    &::placeholder{
-      color: #AAAAAA;
+    &::placeholder {
+      color: #aaaaaa;
       letter-spacing: 3px;
     }
   }
@@ -70,10 +63,14 @@
   border: none;
   font-size: 19px;
   color: color;
- 
-  i{
-  color: #6c6c6c;
-  
+
+  i {
+    color: #6c6c6c;
   }
 }
-
+.rigth {
+  position: absolute;
+  font-size: 20px !important;
+  left: 180px !important;
+  cursor: pointer;
+}

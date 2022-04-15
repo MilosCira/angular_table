@@ -7,11 +7,13 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./table-body.component.scss'],
 })
 export class TableBodyComponent implements OnInit {
-  @Input() data:any;
+  @Input('data') data:any;
   constructor(private dataService: DataService) {}
   editBoolean:boolean = false;
   checked:any=0;
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getData()
+  }
 
   openEdit() {
     this.editBoolean = !this.editBoolean;
@@ -20,5 +22,9 @@ export class TableBodyComponent implements OnInit {
   //Function give checked user
   checkUserChanged(checked:any, id:any) {
     this.checked = this.dataService.changeCheckValue(checked, id);
+  }
+  getData(){
+    this.data= this.dataService.defaultData();
+      
   }
 }

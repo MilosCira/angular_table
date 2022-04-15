@@ -1,4 +1,4 @@
-.table-body-component {
+.table-component {
   width: 1519px;
   margin-bottom: 30px;
   table {
@@ -65,7 +65,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   &__img {
     padding: 5%;
     display: flex;
@@ -74,17 +74,22 @@
 }
 .tollbar {
   position: absolute;
-  right: -60px;
+  right: -65px;
   top: 75px;
 }
 th {
   color: #b7b7b7;
   vertical-align: bottom;
+  position: relative;
+  font-size: 16px;
+  bottom: -2px;
+  font-weight: 500;
 }
 td {
   color: #919191;
   height: 37px;
   vertical-align: bottom;
+  font-size: 16px;
 }
 .button-icon {
   background: none;

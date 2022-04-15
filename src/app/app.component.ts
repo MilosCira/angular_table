@@ -14,11 +14,10 @@ export class AppComponent {
   dataUser!:any[];
 
   ngOnInit(): void {
-    this.getData();
   }
  
-  //Function return all users from json
-  getData() {
-    this.dataUser = this.dataService.defaultData();
+  getData(){
+    this.dataUser= this.dataService.fillteredData;
+      
   }
 }

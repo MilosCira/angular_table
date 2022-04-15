@@ -139,10 +139,10 @@ export class DataService implements OnInit {
       ) {
         this.fillteredData.push(this.userData[i]);
       }
-    }
-    console.log(search);
+    }    
+ 
     
-    return this.userData=this.fillteredData;
+    return this.fillteredData;
   }
 
    //Function return count of users
